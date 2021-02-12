@@ -1,0 +1,180 @@
+.mission-header {
+  text-align: center;
+  margin: 50px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.calc {
+  display: grid;
+  grid-template-columns: 2fr [left-s] 3fr [left-e] 1fr [right-s] 3fr [right-e] 2fr;
+  grid-template-rows: [top-s] 50px [top-e] 50px [middle-s] auto [middle-e bottom-s] auto [bottom-e];
+}
+
+.mission_details {
+  grid-column: left-s/left-e;
+  grid-row: top-s/top-e;
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+}
+
+.mission_loader {
+  grid-column: right-s/right-e;
+  grid-row: top-s/top-e;
+  display: grid;
+  grid-template-columns: 2fr 5fr 2fr;
+}
+
+.save_load_options {
+  place-self: center;
+  width: 80%;
+}
+
+.stage {
+  grid-column: left-s/left-e;
+  grid-row: middle-s/middle-e;
+}
+
+.equiplist_wrapper {
+  grid-column: right-s/right-e;
+  grid-row: middle-s/middle-e;
+}
+
+.stage__form {
+  padding: 30px 0px;
+}
+
+.stage__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.stage__id {
+  justify-self: left;
+}
+
+.stage__pass {
+  justify-self: center;
+}
+
+.stage__disparity {
+  justify-self: right;
+}
+
+.stage__inputs {
+  display: grid;
+  grid-template-columns: 1fr 7fr 3fr 1fr;
+  margin: 10px 0px;
+}
+
+.stage__at {
+  margin: 3px;
+}
+
+.stage__at__input {
+  width: 90%;
+  margin: 3px;
+}
+
+.stage__difficulty {
+  margin: 3px;
+}
+
+.stage__difficulty__input {
+  width: 90%;
+  margin: 3px;
+}
+
+.stage__to {
+  margin: 3px;
+}
+
+.stage__to__input {
+  width: 90%;
+  margin: 3px;
+}
+
+.stage__time {
+  margin: 3px;
+}
+
+.stage__time__input {
+  width: 90%;
+  margin: 3px;
+}
+
+.stage__total {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 10px 0px;
+}
+
+.stage__total__thrust {
+  justify-self: left;
+}
+
+.stage__total__impulse {
+  justify-self: center;
+}
+
+.stage__total__mass {
+  justify-self: right;
+}
+
+.stage__equipment {
+  display: grid;
+  grid-template-columns: [s] 1fr 3fr 1fr 1fr 2fr [e];
+  justify-items: center;
+}
+
+.stage__add_buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.stage__add_equip_notes {
+}
+
+.equip {
+  grid-column: s/e;
+  display: grid;
+  grid-template-columns: [s] 1fr 3fr 1fr 1fr 2fr [e];
+  justify-items: center;
+}
+
+.equip__quantity {
+  width: 25%;
+}
+
+.equiplist__headers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+.equiplist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 5px 0px;
+}
+
+.stage__delete_stage {
+  padding: 15px;
+}
+
+.stage__add_stage {
+  padding: 15px;
+}
+
+.missiontotal_wrapper {
+}
+
+.mission__headers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.mission__equip__li {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
